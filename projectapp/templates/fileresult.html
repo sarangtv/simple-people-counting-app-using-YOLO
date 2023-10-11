@@ -1,0 +1,76 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Site Metas -->
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+       
+        <title>Fruit Quality</title>
+       
+        
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+        <!-- fonts style -->
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+         <!-- Custom styles for this template -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+
+        
+    </head>
+    <body class="sub_page">
+        <div class="hero_area">
+          <!-- header section strats -->
+          <div class="brand_box">
+           <h3>People Counter  Result</h3>
+          </div>
+          <!-- end header section -->
+          <!-- slider section -->
+        <!-- nav section -->
+      
+        <section class="nav_section">
+          <div class="container">
+            <div class="custom_nav2">
+              <nav class="navbar navbar-expand custom_nav-container ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+      
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="d-flex  flex-column flex-lg-row align-items-center">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/file">Back <span class="sr-only">(current)</span></a>
+                          </li>
+    
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                      
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </section>
+        <img align="right" src="{% static 'images/shop-img.jpg' %}" alt=""><br><br><br><br><br><br><br>
+        <br>
+        
+        <center>
+            <h1><b><U>Uploaded file is : </U><br><br> {{ uploaded }} </b></h1>
+            <h1><b><U>Count Is : </U><br><br> {{level }} </b></h1>
+        </center>
+        <center>
+
+
+</center>
+
+
+<center>
+  
+      </center>
+    </body>
+</html>

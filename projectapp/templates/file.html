@@ -1,0 +1,75 @@
+
+{% load static %}
+<html>
+    <head>
+        <!-- Basic -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Site Metas -->
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+       
+        <title>Fruit Quality</title>
+       
+        
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+        <!-- fonts style -->
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+         <!-- Custom styles for this template -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+        
+       </head>
+    
+        <body class="sub_page">
+            <div class="hero_area">
+              <!-- header section strats -->
+              <div class="brand_box">
+               <h3>Fruit Quality Check</h3>
+              </div>
+              <!-- end header section -->
+              <!-- slider section -->
+            <!-- nav section -->
+          
+            <section class="nav_section">
+              <div class="container">
+                <div class="custom_nav2">
+                  <nav class="navbar navbar-expand custom_nav-container ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+          
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <div class="d-flex  flex-column flex-lg-row align-items-center">
+                        <ul class="navbar-nav  ">
+                         
+        
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                          
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </section>
+            <img align="right" src="{% static 'images/shop-img.jpg' %}" alt=""><br><br>
+            
+            <a href="../imageCaputre/">Capture Image</a>
+            <br><br><br><br><br>
+        
+        <center>
+
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+        <input type="file" name="myfile">
+        <br><br><br><br>
+        <button type="submit" style="padding:9px 50px;">Upload</button>
+</form>
+</center>
+              
+</body>
+</html>
